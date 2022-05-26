@@ -1,0 +1,391 @@
+@import url('https://fonts.google.com/specimen/Koulen');
+body{
+	padding: 0;
+	margin: 0;
+	background:#ffffff2f;
+	z-index: fixed;
+	background-image: url("../images/first.jpg");
+	background-attachment: fixed;
+}
+html,h3,h4,h5,h6,a{
+	font-family: "Koulen";
+}
+/*Анимация скрола*/
+html{scroll-behavior: smooth;}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 4px grey;
+  border-radius: 10px;
+}
+::-webkit-scrollbar{width : 15px;  }
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 128, 0, 0.476);
+  border-radius: 5px;
+}
+/*NavBar*/
+.navbar{
+	background:#00000044;
+    color: #FFF;
+    width: 100%;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2), 0 16px 28px rgba(0,0,0,0.2);
+    text-shadow: 0 0 12px rgba(0,0,0,0.6);   
+    letter-spacing: 2px;
+    z-index: 2;
+    overflow: hidden;
+    backdrop-filter: blur(4px);
+	border-radius: 10px;
+	font-size: 19px;
+}
+.logo {
+	width: 5%;
+	border-radius: 50%;
+}
+
+.nav-link , .navbar-brand{
+	color: #f4f4f4;
+	cursor: pointer;
+	margin-right: 1em !important;
+	border-radius: 10px;
+}
+.nav-link:hover{
+	background: #f4f4f4;
+	color: #000000;
+	font-size: 19px;
+	border-radius: 10px;
+
+}
+.navbar-collapse{
+ justify-content: flex-end;
+}
+.navbar-toggler{
+  background:#fff !important;
+}
+/*header style*/
+.header{
+	text-align: center;
+	padding: 5%;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+}
+.header h1{
+	color:rgb(255, 255, 255);
+	text-shadow: 2px 2px 2px #000;
+}
+.header img{
+	text-align: center;
+	height: 60%;
+    width: 60%;
+    border-radius: 50%;
+	margin-top: 5%;
+}
+
+/*About*/
+.about{
+
+	padding: 10px;
+	position: relative;
+}
+.about img{
+	position: relative;
+	width: 39%;
+	height: 45%;
+	margin: auto;
+}	
+.about .desc h3{
+	text-align: center;
+	text-shadow: 1px 1px 1px rgb(0, 0, 0);
+	font-size: 40px;
+}
+.about .desc p{
+	margin-left: 15px;
+	margin-right: 5px;
+	line-height:2;
+	font-size: 20px;
+	color:rgb(255, 255, 255);
+	text-shadow: 2px 2px 2px #000;
+}
+
+/*blog style*/
+.blog{
+	padding-top: 5%;
+	position: relative;	
+}
+.blog-row {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 10px;
+}
+.blog h1{
+	margin-bottom: 20px;
+	color:rgb(255, 255, 255);
+	text-shadow: 2px 2px 2px #000;
+}
+.blog .card{
+	box-shadow: 0 0 20px #ccc;
+}
+.blog .card img{
+	width: 100%;
+	height: 100%;
+}
+	
+.blog .card-title{
+	color:rgb(0, 85, 17);
+	 
+}
+.blog .card-body{
+	padding: 1em;
+}
+
+/*Team*/
+.team{
+	padding-top: 5%;;
+	position: relative;
+}
+.team h1{
+	margin-bottom: 30px;
+	color:rgb(255, 255, 255);
+	text-shadow: 2px 2px 2px #000;	
+}
+
+
+/*fans*/
+.fans{
+	padding-top: 5%;
+    position: relative;	
+}
+.fans h1{
+	color:rgb(255, 255, 255);
+	text-shadow: 2px 2px 2px #000;
+	
+}
+.fans .row{
+	padding: 10%;
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+/* Кнопка, решил не добавлять */
+/* .fans .button {
+	border: solid 1px black;
+	margin-left: 80%;
+	margin-bottom: 10%;
+	display: inline-block;
+	background: #42424254;
+	color: #fff;
+	padding: 12px;
+	border-radius: 8px;
+	text-decoration: none;
+	font-size: 18px;
+	text-shadow: 2px 2px 2px #000;
+} */
+
+/*Contacts*/
+.contact-form{
+	position: relative;	
+
+}
+.contact-form h2{
+	padding-top: 10px;
+	color: rgb(0, 0, 0);
+	font-size: 40px;
+	 
+}
+.button-contact{
+	text-align: center;
+	border: solid 1px black;
+	width: 100%;
+	display: inline-block;
+	background: rgba(0, 128, 0, 0.476);
+	color: rgb(0, 0, 0);
+	padding: 12px;
+	border-radius: 10px;
+	font-size: 20px;
+}
+.contact-form p{
+	margin-top: 3%;
+	margin-left: 10%;
+}
+
+
+/*Buffer*/
+.bufer1{
+	background:#282828;
+	height: 20px;
+	width: 100%;
+	margin-top: 50px;
+}
+.bufer2{
+	background:#282828;
+	height: 20px;
+	width: 100%;
+}
+
+/*Glass-backdrop размытие задника*/
+.glass-backdrop {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.glass-backdrop span {
+    position: relative;
+    text-align: center;
+    color: #FFF;
+    width: 80%;
+	padding-top: 30px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2), 0 16px 28px rgba(0,0,0,0.2);
+    text-shadow: 0 0 12px rgba(0,0,0,0.6);   
+    letter-spacing: 4px;
+    z-index: 1;
+    overflow: hidden;
+    backdrop-filter: blur(4px);
+	border-radius: 40px;
+}
+.glass-backdrop-for-about{
+	width:60%;
+    display: flex;
+	margin: 20px 0;
+}
+.glass-backdrop-for-about span{
+    color: #FFF;
+    width: 100%;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2), 0 16px 28px rgba(0,0,0,0.2);
+    z-index: 1;
+    overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4px);
+	border-radius: 40px;	
+}
+
+@media screen and (max-width: 768px) {
+
+	.logo {
+		width: 50px;
+	}
+	.navbar {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	/*header style*/
+	.header .glass-backdrop{
+		display: none;
+	}
+	.header img{
+		margin-top: 10%;
+		height: 100%;
+		width: 100%;
+		margin-bottom: 20%;
+	}
+	
+	h1 {
+		font-size: 25px;
+		margin: 5px  5px;
+		margin-top: -20px;
+		margin-bottom: 0px;
+		padding: 0px;
+	}
+
+	/* About */
+	.about img{
+		margin-top: 0px;
+		width: 100%;
+	}	
+	.about .desc p{
+		line-height:1.5;
+	}
+	.about .row {
+		grid-template-columns: 1fr ;
+	}
+	.glass-backdrop-for-about{
+		width:100%;
+	}
+
+	/* Blog */
+	.blog {
+		padding-bottom: 40px;
+	}
+	.blog-row {
+		grid-template-columns: 1fr;
+	}
+	.team {
+		padding-bottom: 40px;
+	}
+	/* Fans */
+	.fans .row{
+		padding: 5%;
+		position: relative;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	
+	.logo {
+		width: 50px;
+	}
+	.navbar {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	/*header style*/
+	.header .glass-backdrop{
+		display: none;
+	}
+	.header img{
+		margin-top: 30%;
+		height: 100%;
+		width: 100%;
+		margin-bottom: 20%;
+	}
+	
+	h1 {
+		font-size: 25px;
+		margin: 5px  5px;
+		margin-top: -20px;
+		margin-bottom: 0px;
+		padding: 0px;
+	}
+
+	/* About */
+	.about img{
+		margin-top: 0px;
+		width: 100%;
+	}	
+	.about .desc p{
+		line-height:1.5;
+	}
+	.about .row {
+		grid-template-columns: 1fr ;
+	}
+	.glass-backdrop-for-about{
+		width:100%;
+	}
+
+	/* Blog */
+	.blog {
+		padding-bottom: 40px;
+	}
+	.blog-row {
+		grid-template-columns: 1fr;
+	}
+	
+	/* Team */
+	.team {
+		padding-bottom: 40px;
+	}
+
+	.fans .row{
+		padding: 5%;
+		position: relative;
+		grid-template-columns: 1fr;
+	}
+}

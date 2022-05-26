@@ -1,0 +1,78 @@
+* {box-sizing: border-box}
+body {margin:0}
+.mySlides {display: none}
+.mySlides img {
+  vertical-align: middle;opacity: 1;
+  border-radius: 15px;
+  border: solid 2px gray;
+  margin-left: 25%;
+	width: 50%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 100%;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  text-shadow: 2px 2px 2px #000;	
+}
+
+/* Number text */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 16px;
+  padding: 8px 12px;
+  position: relative;
+  top: 0;
+  text-shadow: 3px 3px 3px #000;	
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+  opacity: 1;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 425px) {
+  .prev, .next,.text {
+    font-size: 9px
+  }
+  .mySlides img{
+	margin-left: 12.5%;
+	width: 75%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+  .prev, .next, .text {
+    font-size: 12px
+  }
+  .mySlides img{
+		margin-left: 12.5%;
+		width: 75%;
+	}
+}
